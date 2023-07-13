@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Here</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <ul>
+                <li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#">Missions</a></li>
+                <li><a href="#">Values</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-caret-down"></i> More Brands<i class="fa fa-caret-down"></i></a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="#">Dr Alpha Adult Daipers</a></li>
+                            <li><a href="#">Mr Kisan</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="title">
+        <h1>Dr Alpha Brands</h1>
+        <h2>Empower the future brands...</h2>
+        <h3>Suggestions box..</h3>
+    </div>
+    <div class="container">
+        <h2>Suggestions Page:</h2>
+        <form action="add.php" method="post">           <!--connection to php file-->
+            <label for="username">Username</label>
+            <input type="text" id="username" name="Username" required>
+
+            <label for="suggestions">Suggestions</label><br>
+            <input type="text" id="suggestions" name="Suggestions" required>
+
+            <label for="rating">Rate</label>
+            <input type="number" id="rating" name="Rate" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
